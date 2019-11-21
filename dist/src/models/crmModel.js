@@ -1,15 +1,15 @@
-import mongoose from 'mongoose';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
-export const ContactSchema = new Schema({
+exports.ContactSchema = new Schema({
     firstName: {
         type: String,
-        required: 'Enter a first name'
+        required: "Enter a first name"
     },
     lastName: {
         type: String,
-        required: 'Enter a last name'
+        required: "Enter a last name"
     },
     email: {
         type: String
@@ -21,7 +21,7 @@ export const ContactSchema = new Schema({
         type: Number
     },
     created_date: {
-       type: Date,
-       default: Date.now 
+        type: Date,
+        default: Date.now
     }
 });
